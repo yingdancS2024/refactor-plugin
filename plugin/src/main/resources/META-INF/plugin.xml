@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.example.plugin_swing</id>
+    <name>3unShine Refactor</name>
+    <version>1.0</version>
+    <vendor email="adanchen0512@163.com" url="https://dududu.com">3unShine</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+
+<!--    <actions>-->
+<!--        <action id="MyPluginAction" class="org.example.plugin.MyPluginAction" text="Say Hello" description="Displays a hello message">-->
+<!--            <add-to-group group-id="EditorPopupMenu" anchor="last"/>-->
+<!--        </action>-->
+<!--    </actions>-->
+    <actions>
+        <action id="RefactorSuggestionAction"
+                class="com.example.plugin.RefactorSuggestionAction"
+                text="Use My Refactor Plugin"
+                description="Get refactor suggestions">
+            <add-to-group group-id="RefactoringMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
